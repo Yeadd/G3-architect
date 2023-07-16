@@ -7,14 +7,13 @@
     font-family: 'Work Sans', sans-serif;
   }
   .button-primary{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #FFF;
     border-radius: 8px;
     background: #FF900E;
-    width: 180px;
-   height: 64px;
-   flex-shrink: 0;
+    padding: 20px 24px;
+    border: 0;
   }
 
   /* header styles */
@@ -62,3 +61,27 @@
   .banner-description{
     color: #727272;
   }
+  .banner img{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  /* responsive styles */
+  /* mobile devices */
+  @media screen and (max-width:576px) {
+    header{
+      padding: 10px;
+    }
+    nav{
+      flex-direction: column;
+    }
+  }
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+  header{
+    padding: 50px;
+  }
+  nav{
+    flex-direction: column;
+  }
+}
